@@ -1,156 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/60bfabd217.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/60bfabd217.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav id="navbar" class="bg-body-tertiary d-flex p-4 align-items-center">
-            <a class="navbar-brand d-flex position-relative gap-4" href="#">
-                <p class="judul">Recyle For Change</p>
-            </a>
-            <ul class="list-xl position-relative gap-4">
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Kontak Kami</a></li>
+      <nav id="navbar" class="bg-body-tertiary d-flex p-4 align-items-center">
+        <a class="navbar-brand d-flex position-relative gap-4" href="#">
+          <p class="judul">Recyle For Change</p>
+        </a>
+        <ul class="list-xl position-relative gap-4">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+        </ul>
+        <button
+          id="btn-canvas"
+          class="bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <p
+              class="offcanvas-title"
+              id="offcanvasRightLabel"
+              style="color: var(--green); font-size: 25px; font-weight: bold"
+              class="judul"
+            >
+              Recyle For Change
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex align-items-center">
+            <ul
+              class="position-relative gap-5 align-content-center text-center d-flex flex-column w-100"
+            >
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Layanan</a></li>
+              <li><a href="#">Kontak Kami</a></li>
             </ul>
-            <button id="btn-canvas" class="bg-transparent" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <i
-                    class="fa-solid fa-bars"></i></button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <p class="offcanvas-title" id="offcanvasRightLabel" style="    color: var(--green);
-                    font-size: 25px;
-                    font-weight: bold;" class="judul">Recyle For Change</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body d-flex align-items-center">
-                    <ul class="position-relative gap-5 align-content-center text-center d-flex flex-column w-100">
-                        <li><a href="#">Tentang Kami</a></li>
-                        <li><a href="#">Layanan</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="hero">
-
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-                <div class="carousel-item ci-1 active">
-                    <div class="bio-hero">
-                        <h1> Recyle For Change</h1>
-                        <p>#hijaukanhidupmu</p>
-                        <button class="contactButton">
-                            Contact
-                            <div class="iconButton">
-                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </button>
-
-                    </div>
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item ci-1 active">
+            <div class="bio-hero">
+              <h1>Recyle For Change</h1>
+              <p>#hijaukanhidupmu</p>
+              <button class="contactButton">
+                Contact
+                <div class="iconButton">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="carousel-item ci-2">
-                    <div class="bio-hero bh-2">
-                        <h1> Join Us</h1>
-                        <p>#hijaukanhidupmu</p>
-                        <button class="contactButton">
-                            Contact
-                            <div class="iconButton">
-                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </button>
-                    </div>
-                </div>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item ci-2">
+            <div class="bio-hero bh-2">
+              <h1>Join Us</h1>
+              <p>#hijaukanhidupmu</p>
+              <button class="contactButton">
+                Contact
+                <div class="iconButton">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <div class="aboutUs m-auto p-0 d-flex row">
-        <div class="box about-image col-xl-6 ">
-            <div class="bingkai">
-                <img src="image/about-sampah.png" alt="">
-            </div>
+      <div class="box about-image col-xl-6">
+        <div class="bingkai">
+          <img src="image/about-sampah.png" alt="" />
         </div>
-        <div class="box mt-5 about-desc gap-2 col-xl-6 d-flex flex-column">
-            <h1 class="slogan">Mendorong <strong>daur ulang</strong> untuk <span class="bg-green">lingkungan
-                    lestari</span> dan <span class="bg-green">perubahan positif.</span></h1>
-            <p>Menjadi platform terdepan dalam mempromosikan budaya daur ulang dan mendorong perubahan positif melalui
-                tindakan nyata demi lingkungan yang lebih berkelanjutan.</p>
-            <a href="#">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+      </div>
+      <div class="box mt-5 about-desc gap-2 col-xl-6 d-flex flex-column">
+        <h1 class="slogan">
+          Mendorong <strong>daur ulang</strong> untuk
+          <span class="bg-green">lingkungan lestari</span> dan
+          <span class="bg-green">perubahan positif.</span>
+        </h1>
+        <p>
+          Menjadi platform terdepan dalam mempromosikan budaya daur ulang dan
+          mendorong perubahan positif melalui tindakan nyata demi lingkungan
+          yang lebih berkelanjutan.
+        </p>
+        <a href="#">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
     </div>
     <!-- Layanan -->
     <div class="wrap">
-        <div class="layanan">
-            <div class="layanan-header">
-                <h1>Layanan</h1>
-            </div>
-            <div class="layanan-list d-flex flex-column">
-                <div class="pick-off">
-                    <img src="image/box.png" alt="box">
-                    <div class="pick-detil">
-                        <h3>Pick Off</h3>
-                        <p>Penjelasan dari sebuah </p>
-                    </div>
-                </div>
-                <div class="drop-off"></div>
-            </div>
+      <div class="layanan">
+        <div class="layanan-header pt-3 mb-5">
+          <h1>Layanan</h1>
         </div>
+        <div class="layanan-list d-flex mt-2 flex-column">
+          <div class="pick-off">
+            <div class="pick-detil">
+              <h3>Pick Up: Solusi Praktis untuk Pengiriman Barang</h3>
+              <p>
+                Layanan pick up memungkinkan Anda untuk mengirimkan barang tanpa
+                perlu repot ke agen. Kurir akan datang ke lokasi Anda untuk
+                mengambil barang, sehingga menghemat waktu dan tenaga Anda.
+                Layanan ini sangat cocok untuk individu dan bisnis yang sibuk,
+                atau yang memiliki banyak barang untuk dikirim.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i> Foto
+                Sampah
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i> Upload
+                Foto ke WhatsApp
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i>
+                Kolektor Terdekat Menjemput
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i>
+                Menimbang dan Membayar Sampah
+              </p>
+              <button
+                class="contactButton"
+                style="
+                  width: 150px;
+                  color: white;
+                  position: relative;
+                  margin-top: 30px;
+                  background-color: #299e63;
+                "
+              >
+                Contact
+                <div class="iconButton">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="pick-detil">
+              <h3>Drop Off: Solusi Mudah untuk Menerima Barang</h3>
+              <p>
+                Layanan drop off memungkinkan Anda untuk dengan mudah menerima
+                barang tanpa perlu menunggu kurir datang ke rumah Anda. Anda
+                dapat mengantarkan barang ke lokasi drop off terdekat, sehingga
+                menghemat waktu dan tenaga Anda.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i> Kemas Barang
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i>Tulis Alamat Drop Off
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i>
+                Bawa Barang ke Drop Off
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i>
+                Serahkan Barang
+              </p>
+              <p>
+                <i class="fa-solid fa-circle" style="color: #299e63"></i>
+                Simpan Resi
+              </p>
+              <button
+                class="contactButton"
+                style="
+                  width: 150px;
+                  color: white;
+                  position: relative;
+                  margin-top: 15px;
+                  background-color: #299e63;
+                "
+              >
+                Contact
+                <div class="iconButton">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

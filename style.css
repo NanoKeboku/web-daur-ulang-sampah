@@ -1,506 +1,592 @@
 * {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 :root {
-    --green: #299E63;
+  --green: #299e63;
 }
 
 li a {
-    text-decoration: none;
-    font: 16px "Red Hat Text", sans-serif;
-    color: rgb(117, 117, 117);
-    font-weight: 400;
+  text-decoration: none;
+  font: 16px "Red Hat Text", sans-serif;
+  color: rgb(117, 117, 117);
+  font-weight: 400;
 }
 
 li a:hover {
-    color: var(--green);
+  color: var(--green);
 }
 
 nav {
-    height: 90px;
-    width: 100%;
-    max-width: 1400px;
-    border-bottom: 1px solid black;
-    position: fixed;
-    justify-content: space-between;
-    z-index: 10;
+  height: 90px;
+  width: 100%;
+  max-width: 1400px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 10;
 }
 
 nav ul {
-    display: flex;
+  display: flex;
 }
 
 .judul {
-    color: var(--green);
-    font-size: 25px;
-    font-weight: bold;
+  color: var(--green);
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #btn-canvas {
-    display: none;
-    font-size: 35px;
-    border: none;
-    color: var(--green);
+  display: none;
+  font-size: 35px;
+  border: none;
+  color: var(--green);
 }
 
-
 .container {
-    width: 100%;
-    height: 500px;
-    margin: 0 auto;
-    position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slider {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .slide:first-child {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .text h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .text p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navigation button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .navigation button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
 
 /* ============ CAROUSEL ============ */
 .hero {
-    height: 100vh;
-    max-height: 700px;
-    overflow: hidden;
+  height: 100vh;
+  max-height: 700px;
+  overflow: hidden;
 }
 
 .carousel-inner {
-    background-color: var(--green);
-    height: 100%;
-    width: 100%;
+  background-color: var(--green);
+  height: 100%;
+  width: 100%;
 }
 
 .ci-1,
 .ci-2 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100px 0;
-    width: 100%;
-    height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100px 0;
+  width: 100%;
+  height: 100%;
 }
 
 .ci-1 {
-    background-image: url(image/1.png);
+  background-image: url(image/1.png);
 }
 
 .ci-2 {
-    background-image: url(image/2.png);
+  background-image: url(image/2.png);
 }
 
 .bio-hero {
-    position: relative;
-    top: 200px;
-    left: 150px;
+  position: relative;
+  top: 200px;
+  left: 150px;
 }
 
 .bio-hero h1 {
-    color: white;
-    font: 64px "Red Hat Text", sans-serif;
-    font-weight: 800;
+  color: white;
+  font: 64px "Red Hat Text", sans-serif;
+  font-weight: 800;
 }
 
 .bio-hero p {
-    font: 35px "Red Hat Text", sans-serif;
-    color: white;
-    font-weight: 300;
-
+  font: 35px "Red Hat Text", sans-serif;
+  color: white;
+  font-weight: 300;
 }
 
 .contactButton {
-    margin-top: 100px;
-    background: #fff;
-    color: var(--green);
-    font-family: inherit;
-    padding: 0.45em;
-    padding-left: 1em;
-    font-size: 17px;
-    font-weight: 500;
-    border-radius: 0.9em;
-    border: none;
-    cursor: pointer;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #ffffff;
-    overflow: hidden;
-    position: relative;
-    height: 2.8em;
-    padding-right: 3em;
+  margin-top: 100px;
+  background: #fff;
+  color: var(--green);
+  font-family: inherit;
+  padding: 0.45em;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #ffffff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3em;
 }
 
 .iconButton {
-    margin-left: 1em;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #c8ffe4;
-    right: 0.3em;
-    transition: all 0.3s;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #c8ffe4;
+  right: 0.3em;
+  transition: all 0.3s;
 }
 
 .contactButton:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em rgb(190, 189, 189);
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em rgb(190, 189, 189);
 }
 
 .contactButton:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em white;
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em white;
 }
-
-
-
 
 /* ===================== About Us =================== */
 
 .aboutUs {
-    width: 80%;
-    box-sizing: border-box;
-    max-width: 1400px;
-    height: 100vh;
-    max-height: 800px;
-    margin-bottom: 100px;
+  width: 80%;
+  box-sizing: border-box;
+  max-width: 1400px;
+  height: 100vh;
+  max-height: 800px;
+  margin-bottom: 100px;
 }
 
 .box {
-    /* background-color: #bbfddc; */
-    /* border: 1px solid black; */
-    width: 50%;
-    padding: 0;
+  /* background-color: #bbfddc; */
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 0;
 }
 
 .about-image,
 .about-desc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bingkai {
-    overflow: hidden;
-    border-radius: 5px;
-    width: 100%;
-    margin: auto;
-    background: #27AC5D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+  background: #27ac5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bingkai img {
-    object-fit: cover;
-    max-width: 100%;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .about-desc {
-    /* min-width: 376px; */
-    align-items: start;
-
+  /* min-width: 376px; */
+  align-items: start;
 }
 
-
 .slogan {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .slogan .bg-green {
-    background-color: #299E63;
-    color: #fff;
-    padding: 3px;
-    font-weight: 400;
+  background-color: #299e63;
+  color: #fff;
+  padding: 3px;
+  font-weight: 400;
 }
 
 .about-desc p {
-    font: 16px "Red Hat Text", sans-serif;
-    color: #464F54;
-    border-spacing: 24px;
+  font: 16px "Red Hat Text", sans-serif;
+  color: #464f54;
+  border-spacing: 24px;
 }
 
 .about-desc a {
-    color: #27AC5D;
-    font: 20px "Red Hat Text", sans-serif;
-    text-decoration: none;
-    font-weight: 500;
-    display: flex; 
-    position: relative;
-    gap: 10px;
+  color: #27ac5d;
+  font: 20px "Red Hat Text", sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  position: relative;
+  gap: 10px;
 }
 
 .about-desc a i {
-    padding-top: 6px;
+  padding-top: 6px;
 }
 
 /* ================ Layanan ============= */
 
 .wrap {
-    width: 100%;
-    height: auto;
-    background: #F6F8FB;
+  width: 100%;
+  height: auto;
+  background: #f6f8fb;
 }
-    
+
 .layanan {
-    width: 80%;
-    /* border: 1px solid black; */
-    /* background-color: #27AC5D; */
-    margin: auto;
-    height: auto;
-    padding: 30px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 80%;
+  /* border: 1px solid black; */
+  /* background-color: #27AC5D; */
+  margin: auto;
+  height: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .layanan-list {
-    width: 100%;
-    height: 100vh;
-    /* background: #000; */
+  width: 100%;
+  height: 80vh;
 }
 
 .pick-off {
-    width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  gap: 20px;
 }
 
 .pick-detil {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
 }
 
 .pick-detil h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .pick-detil p,
 .pick-detil li {
-    font: 14px "Red Hat Text", sans-serif;
-    color: #747575;
+  font: 14px "Red Hat Text", sans-serif;
+  color: #747575;
 }
-
-
 
 .pick-detil,
 .pick-img {
-    width: 50%;
-    background: #Fff;
+  width: 50%;
+  background: #fff;
 }
 
 .pick-off img {
-    width: 300px;
+  width: 300px;
 }
 
+/* ============ Jenis Sampah ============ */
+
+.jenisSampah {
+  height: 100vh;
+  background: #f6f8fb;
+}
+
+.jenis-item {
+  width: 80%;
+}
+
+.jenis-judul {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.jenis-judul h3 {
+    font-size: 35px;
+}
+
+.jenis-item .row div {
+  display: flex;
+  padding: 70px;
+  width: 200px;
+  height: 170px;
+  border: 1px solid rgb(215, 215, 215);
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.jenis-item .row div:hover {
+  border: 1px solid #27ac5d;
+}
+
+.jenis-item .row div i {
+  font-size: 40px;
+}
+
+
+
+/* ========== FOOTER ========== */
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#27ac5d;
+  color:#fff;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 
 
 @media screen and (max-width: 980px) {
-    .pick-off {
+  .pick-off {
     flex-direction: column;
-    }
+  }
 
-    .pick-detil {
-        width: 100%;
-    }
+  .pick-detil {
+    width: 100%;
+  }
 
-    .wrap {
-        margin-top: 140px;
-        height: 180vh;
-    }
+  .wrap {
+    margin-top: 140px;
+    height: 180vh;
+  }
 }
 
 @media screen and (max-width: 1210px) {
-    .hero {
-        max-height: 550px;
-    }
+  .hero {
+    max-height: 550px;
+  }
 
+  .carousel-inner {
+    background-color: var(--green);
+    height: 100%;
+    width: 100%;
+  }
 
-    .carousel-inner {
-        background-color: var(--green);
-        height: 100%;
-        width: 100%;
-    }
+  .ci-1 {
+    background-image: url(image/1.png);
+  }
 
-    .ci-1 {
-        background-image: url(image/1.png);
-    }
+  .carousel-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+  }
 
-    .carousel-item {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--green);
-    }
+  .bio-hero {
+    top: 150px;
+    left: 150px;
+    width: 400px;
+    /* align-items: center; */
+    /* display: flex; */
+    flex-direction: column;
+  }
 
-    .bio-hero {
-        top: 150px;
-        left: 150px;
-        width: 400px;
-        /* align-items: center; */
-        /* display: flex; */
-        flex-direction: column;
-    }
+  .contactButton {
+    margin-top: 30px;
+  }
 
-    .contactButton {
-        margin-top: 30px;
-    }
-
-    .bingkai {
-        margin-top: 70px;
-    }
+  .bingkai {
+    margin-top: 70px;
+  }
 }
 
-
-
-
 @media only screen and (max-width: 875px) {
-    nav {
-        min-width: 350px;
-    }
+  nav {
+    min-width: 350px;
+  }
 
-    header nav .list-xl {
-        display: none;
-    }
+  header nav .list-xl {
+    display: none;
+  }
 
-    #btn-canvas {
-        display: flex;
-    }
+  #btn-canvas {
+    display: flex;
+  }
 
-    .offcanvas-header h5 {
-        color: var(--green);
-    }
+  .offcanvas-header h5 {
+    color: var(--green);
+  }
 
-    .hero {
-        height: 100vh;
-        max-height: 500px;
-        overflow: hidden;
-        padding-top: 85px;
-    }
+  .hero {
+    height: 100vh;
+    max-height: 500px;
+    overflow: hidden;
+    padding-top: 85px;
+  }
 
-    .carousel-inner {
-        background-color: var(--green);
-        height: 100%;
-    }
+  .carousel-inner {
+    background-color: var(--green);
+    height: 100%;
+  }
 
-    .ci-1,
-    .ci-2 {
-        background-image: none;
-    }
+  .ci-1,
+  .ci-2 {
+    background-image: none;
+  }
 
-    .carousel-item {
-        background-color: var(--green);
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
+  .carousel-item {
+    background-color: var(--green);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
-    .bio-hero {
-        top: 130px;
-        left: 0px;
-        right: 0px;
-        position: relative;
-        width: 350px;
-        text-align: center;
-        margin: auto;
-        /* background: #000; */
-        align-items: right;
-    }
+  .bio-hero {
+    top: 130px;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    /* background: #000; */
+    align-items: right;
+  }
 
-    .bh-2 {
-        top: 130px;
-    }
+  .bh-2 {
+    top: 130px;
+  }
 
-    .bio-hero h1 {
-        font-size: 35px;
-    }
+  .bio-hero h1 {
+    font-size: 35px;
+  }
 
-    .bio-hero p {
-        font-size: 20px;
-    }
+  .bio-hero p {
+    font-size: 20px;
+  }
 
-    .contactButton {
-        margin: auto;
-    }
+  .contactButton {
+    margin: auto;
+  }
 
-
-
-    .wrap {
-        margin-top: 140px;
-        max-height: auto;
-    }
-
+  .wrap {
+    margin-top: 140px;
+    max-height: auto;
+  }
 }

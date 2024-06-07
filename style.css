@@ -359,6 +359,7 @@ nav ul {
 .jenisSampah {
   height: 100vh;
   background: #f6f8fb;
+  margin-top: 30px;
 }
 
 .jenis-item {
@@ -588,5 +589,30 @@ nav ul {
   .wrap {
     margin-top: 140px;
     max-height: auto;
+  }
+
+  .aboutUs {
+    max-height: 700px;
+  }
+
+  /* ========== LAYANAN ============ */
+
+  .pick-off {
+    width: 100%;
+  }
+
+  .layanan{
+    padding: 0;
+  }
+
+  .jenisSampah {
+    /* height: 100vh; */
+    max-height: auto;
+    position: relative;
+    top: 500px;
+  }
+
+  .jenis-item {
+    position: relative;
   }
 }

@@ -298,6 +298,7 @@ nav ul {
 .wrap {
   width: 100%;
   height: auto;
+  max-height: 800px;
   background: #f6f8fb;
 }
 
@@ -358,6 +359,7 @@ nav ul {
 
 .jenisSampah {
   height: 100vh;
+  max-height: 800px;
   /* background: #f6f8fb; */
   /* margin-top: 30px; */
   justify-content: space-between;
@@ -519,7 +521,7 @@ nav ul {
   }
 
   .wrap {
-    max-height: auto;
+    /* max-height: auto; */
     /* min-height: 1000px; */
   }
 }
@@ -600,8 +602,6 @@ nav ul {
   .wrap {
     margin-top: 140px;
     padding-bottom: 100px;
-    max-height: auto;
-    height: auto;
     /* padding: 50px 50px; */
     
   }
@@ -636,6 +636,10 @@ nav ul {
 
 @media only screen and (max-width: 447px){
   .jenisSampah {
-    /* max-height: 2000px; */
+    max-height: 2200px;
+    margin: 500px 0 100px 0;
+    /* top: 500px; */
+    /* max-height: auto; */
+    height: auto;
   }
 }

@@ -514,8 +514,13 @@ nav ul {
     margin-top: 70px;
   }
 
-  .wrap, .jenisSampah {
+  .aboutUs {
+    justify-content: start;
+  }
+
+  .wrap {
     max-height: auto;
+    /* min-height: 1000px; */
   }
 }
 
@@ -618,7 +623,7 @@ nav ul {
 
   .jenisSampah {
     height: auto;
-    /* max-height: 1400px; */
+    /* max-height: auto; */
     position: relative;
     margin-bottom: 100px;
   }

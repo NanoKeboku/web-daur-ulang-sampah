@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth ;
+}
+
 :root {
   --green: #299e63;
 }
@@ -45,6 +49,22 @@ nav ul {
   font-size: 35px;
   border: none;
   color: var(--green);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: start;
+}
+
+.offcanvas-header button {
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.offcanvas {
+  position: relative;
+  left: 180px;
 }
 
 .container {

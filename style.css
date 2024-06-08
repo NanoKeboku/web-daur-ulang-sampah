@@ -297,8 +297,8 @@ nav ul {
 
 .wrap {
   width: 100%;
+  max-height:800px;
   height: auto;
-  max-height: 800px;
   background: #f6f8fb;
 }
 
@@ -358,8 +358,8 @@ nav ul {
 /* ============ Jenis Sampah ============ */
 
 .jenisSampah {
-  height: 100vh;
-  max-height: 800px;
+  height: auto;
+  max-height: none;
   /* background: #f6f8fb; */
   /* margin-top: 30px; */
   justify-content: space-between;
@@ -473,8 +473,17 @@ nav ul {
   .pick-detil {
     width: 100%;
   }
-
 }
+
+@media screen and (max-width: 1210px) {
+  .jenisSampah {
+    height: 900px;
+    position: relative;
+    gap: 100px;
+    justify-content: start;
+  }
+}
+
 
 @media screen and (max-width: 1210px) {
   .hero {
@@ -519,13 +528,13 @@ nav ul {
   .aboutUs {
     justify-content: start;
   }
-
-  .wrap {
-    /* max-height: auto; */
-    /* min-height: 1000px; */
-  }
 }
 
+@media only screen and (max-width: 980px) {
+  .wrap {
+    max-height: 1000px;
+  }
+}
 @media only screen and (max-width: 875px) {
   nav {
     min-width: 350px;
@@ -603,7 +612,7 @@ nav ul {
     margin-top: 140px;
     padding-bottom: 100px;
     /* padding: 50px 50px; */
-    
+    max-height: none;
   }
 
   .layanan-list {
@@ -637,9 +646,10 @@ nav ul {
 @media only screen and (max-width: 447px){
   .jenisSampah {
     max-height: 2200px;
-    margin: 500px 0 100px 0;
+    /* margin: 500px 0 100px 0; */
     /* top: 500px; */
     /* max-height: auto; */
     height: auto;
+    gap: 30px;
   }
 }

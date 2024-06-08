@@ -358,8 +358,10 @@ nav ul {
 
 .jenisSampah {
   height: 100vh;
-  background: #f6f8fb;
-  margin-top: 30px;
+  /* background: #f6f8fb; */
+  /* margin-top: 30px; */
+  justify-content: space-between;
+  top: 0;
 }
 
 .jenis-item {
@@ -470,10 +472,6 @@ nav ul {
     width: 100%;
   }
 
-  .wrap {
-    margin-top: 140px;
-    height: 180vh;
-  }
 }
 
 @media screen and (max-width: 1210px) {
@@ -585,15 +583,24 @@ nav ul {
   .contactButton {
     margin: auto;
   }
-
-  .wrap {
-    margin-top: 140px;
-    max-height: auto;
-  }
-
+  
   .aboutUs {
     max-height: 700px;
   }
+
+  .wrap {
+    margin-top: 140px;
+    padding-bottom: 100px;
+    max-height: auto;
+    height: auto;
+    /* padding: 50px 50px; */
+    
+  }
+
+  .layanan-list {
+    height: auto;
+  }
+
 
   /* ========== LAYANAN ============ */
 
@@ -606,13 +613,14 @@ nav ul {
   }
 
   .jenisSampah {
-    /* height: 100vh; */
+    height: auto;
     max-height: auto;
     position: relative;
-    top: 500px;
+    margin-bottom: 100px;
   }
 
   .jenis-item {
     position: relative;
+    height: auto;
   }
 }

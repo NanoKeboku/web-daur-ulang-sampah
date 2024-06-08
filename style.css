@@ -513,6 +513,10 @@ nav ul {
   .bingkai {
     margin-top: 70px;
   }
+
+  .wrap, .jenisSampah {
+    max-height: auto;
+  }
 }
 
 @media only screen and (max-width: 875px) {
@@ -614,7 +618,7 @@ nav ul {
 
   .jenisSampah {
     height: auto;
-    max-height: auto;
+    /* max-height: 1400px; */
     position: relative;
     margin-bottom: 100px;
   }
@@ -622,5 +626,11 @@ nav ul {
   .jenis-item {
     position: relative;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 447px){
+  .jenisSampah {
+    /* max-height: 2000px; */
   }
 }

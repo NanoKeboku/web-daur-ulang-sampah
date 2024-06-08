@@ -222,6 +222,8 @@ nav ul {
   height: 100vh;
   max-height: 800px;
   margin-bottom: 100px;
+  padding-top: 100px;
+  align-items: center;
 }
 
 .box {
@@ -234,8 +236,12 @@ nav ul {
 .about-image,
 .about-desc {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+}
+
+.about-desc{
+  height: 350px;
 }
 
 .bingkai {

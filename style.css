@@ -146,6 +146,15 @@ nav ul {
   overflow: hidden;
 }
 
+#logo {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
 .carousel-inner {
   background-color: var(--green);
   height: 100%;
@@ -562,6 +571,10 @@ nav ul {
   }
 }
 @media only screen and (max-width: 875px) {
+
+
+
+
   nav {
     min-width: 350px;
   }
@@ -677,5 +690,15 @@ nav ul {
     /* max-height: auto; */
     height: auto;
     gap: 30px;
+  }
+
+  #logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70px;
+    height: 70px;
   }
 }

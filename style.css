@@ -27,7 +27,6 @@ li a:hover {
 nav {
   height: 90px;
   width: 100%;
-  max-width: 1400px;
   border-bottom: 1px solid black;
   position: fixed;
   justify-content: space-between;
@@ -339,6 +338,7 @@ nav ul {
 
 .layanan {
   width: 80%;
+  max-width: 1400px;
   /* border: 1px solid black; */
   /* background-color: #27AC5D; */
   margin: auto;
@@ -395,6 +395,8 @@ nav ul {
 .jenisSampah {
   height: auto;
   max-height: none;
+  max-width: 1400px;
+  margin: auto;
   /* background: #f6f8fb; */
   /* margin-top: 30px; */
   justify-content: space-between;

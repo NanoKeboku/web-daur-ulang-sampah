@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Recyle For Change</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="image/logo1 (1).png">
+    <link rel="shortcut icon" href="image/logo1 (1).png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -85,7 +85,7 @@
       <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
           <div class="carousel-item ci-1 active">
-            <img id="logo" src="image/logo1 (1).png" alt="logo" srcset="">
+            <img id="logo" src="image/logo1 (1).png" alt="logo" srcset="" />
             <div class="bio-hero">
               <h1>Recyle For Change</h1>
               <p>#hijaukanhidupmu</p>
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div class="carousel-item ci-2">
-            <img id="logo" src="image/logo1 (1).png" alt="logo" srcset="">
+            <img id="logo" src="image/logo1 (1).png" alt="logo" srcset="" />
             <div class="bio-hero bh-2">
               <h1>Join Us</h1>
               <p>#hijaukanhidupmu</p>
@@ -292,47 +292,67 @@
         </div>
       </div>
     </div>
-    <div class="jenisSampah d-flex flex-column align-items-center">
+    <div
+      class="jenisSampah d-flex flex-column justify-content-center align-items-center"
+    >
       <div class="jenis-judul mt-5">
         <h3>Jenis Sampah</h3>
         <p>Temukan Sampah yang Bisa Daur Ulang di Sini</p>
       </div>
-      <div class="jenis-item container text-center align-items-center d-flex">
-        <div class="row gap-5 d-flex justify-content-center">
-          <div class="col-6 col-sm-2">
-            <i style="color: #a4a4a4" class="fa-solid fa-note-sticky"></i>
-            <p>Kertas</p>
+      <div class="jenis-item container text-center align-items-start d-flex">
+        <div
+          style="justify-content: space-between"
+          class="mt-4 w-100 h-100 gap-5 d-flex p-0 flex-column"
+        >
+          <div
+            class="card-container gap-3 d-flex p-0 flex-column position-relative"
+          >
+            <div
+              class="card-wrap1 row gap-3 justify-content-center align-content-start d-flex w-100"
+            >
+              <div
+              id="kertasBtn" onclick="handleButtonClick('kertas')"
+                class="col-6 col-sm-2 kertas"
+              >
+                <i style="color: #a4a4a4" class="fa-solid fa-note-sticky"></i>
+                <p>Kertas</p>
+              </div>
+              <div id="plastikBtn" onclick="handleButtonClick('plastik')" class="col-6 col-sm-2">
+                <i style="color: #c6ff4c" class="fa-solid fa-bottle-water"></i>
+                <p>Plastik</p>
+              </div>
+              <div id="botolKaca"
+              onclick="handleButtonClick('botolKaca')" class="col-6 col-sm-2">
+                <i style="color: #4cabff" class="fa-solid fa-wine-bottle"></i>
+                <p>Botol Kaca</p>
+              </div>
+              <div id="alumunium" onclick="handleButtonClick('alumunium')" class="col-6 col-sm-2">
+                <i style="color: #ff4b90" class="fa-brands fa-squarespace"></i>
+                <p>Alumunium</p>
+              </div>
+            </div>
+            <div
+              class="card-wrap-2 row gap-3 justify-content-center align-content-start d-flex w-100"
+            >
+              <div id="besiLogam" onclick="handleButtonClick('besiLogam')" class="col-6 col-sm-2">
+                <i style="color: #ffce48" class="fa-solid fa-pallet"></i>
+                <p>Besi & Logam</p>
+              </div>
+              <div id="elektronik" onclick="handleButtonClick('elektronik')" class="col-6 col-sm-2">
+                <i style="color: #299e63" class="fa-solid fa-camera-retro"></i>
+                <p>Elektronik</p>
+              </div>
+              <div id="daun" onclick="handleButtonClick('daun')" class="col-6 col-sm-2">
+                <i style="color: #299e63" class="fa-solid fa-leaf"></i>
+                <p>Leaf</p>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #c6ff4c" class="fa-solid fa-bottle-water"></i>
-            <p>Plastik</p>
-          </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #4cabff" class="fa-solid fa-wine-bottle"></i>
-            <p>Botol Kaca</p>
-          </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #ff4b90" class="fa-brands fa-squarespace"></i>
-            <p>Alumunium</p>
-          </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #ffce48" class="fa-solid fa-pallet"></i>
-            <p>Besi & Logam</p>
-          </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #a4ff59" class="fa-brands fa-contao"></i>
-            <p>Merk</p>
-          </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #299e63" class="fa-solid fa-camera-retro"></i>
-            <p>Elektronik</p>
-          </div>
-          <div class="col-6 col-sm-2">
-            <i style="color: #299e63" class="fa-solid fa-leaf"></i>
-            <p>Leaf</p>
+          <div class="modal-item mt-3 d-flex align-items-center">
           </div>
         </div>
       </div>
+      <!-- Full screen modal -->
     </div>
     <div id="kontak" class="footer-basic">
       <footer>
@@ -355,8 +375,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

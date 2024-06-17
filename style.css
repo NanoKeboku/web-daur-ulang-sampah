@@ -433,6 +433,12 @@ nav ul {
   font-size: 14px;
 }
 
+.jenis-item .row div.toggle-button.actived {
+  border: 1px solid #27ac5d;
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-1px);
+}
+
 .jenis-item .row div:hover {
   border: 1px solid #27ac5d;
   box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
@@ -481,7 +487,7 @@ nav ul {
   position: absolute;
   gap: .5em;
   flex-direction: column;
-  background-color: #f5f5f5;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #212121;
   height: 70%;
   bottom: 0;
@@ -494,11 +500,13 @@ nav ul {
 .text-title {
   font-size: 1.3rem;
   font-weight: 700;
+  font-family: "Red Hat Text", sans-serif;
 }
 
 .text-body {
   font-size: .8rem;
   line-height: 130%;
+  font: 14px "Red Hat Text", sans-serif;
 }
 
 

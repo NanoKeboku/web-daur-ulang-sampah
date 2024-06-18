@@ -1,344 +1,416 @@
 * {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: #299e63;
+}
+
+li a {
+  text-decoration: none;
+  font: 16px "Red Hat Text", sans-serif;
+  color: rgb(117, 117, 117);
+  font-weight: 400;
+}
+
+li a:hover {
+  color: var(--green);
+}
+
+nav {
+  height: 90px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+}
+
+.judul {
+  color: var(--green);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* ========= CANVAS =========  */
+
+#btn-canvas {
+  display: none;
+  font-size: 35px;
+  border: none;
+  color: var(--green);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: start;
+}
+
+.offcanvas-header button {
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.offcanvas {
+  position: relative;
+  left: 180px;
+}
+
+/* =========== HERO =========== */
+
+.hero {
+  height: 100vh;
+  max-height: 700px;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url(image/canvas.jpg);
+  /* background-color: var(--green); */
+  width: 100%;
+}
+
+#logo {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  margin: auto;
+  width: auto;
+  height: 100px;
+}
+
+.about {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1400px;
+  height: 100vh;
+  max-height: 650px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.img-about {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-about img {
+  width: 400px;
+}
+
+.about-text p {
+  font: 18px "Red Hat Text", sans-serif;
+  color: rgb(75, 74, 74);
+}
+
+.about-text p span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* ========= WINDOW ============ */
+
+.window {
+  width: 80%;
+  max-width: 1400px;
+  max-height: 300px;
+  margin: auto;
+  height: 50vh;
+  background: #a5efc3;
+  overflow: hidden;
+}
+
+.window-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.window-wrap p span {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.window-wrap p {
+  font: 16px "Red Hat Text", sans-serif;
+  color: rgb(82, 82, 82);
+}
+
+.window-wrap img {
+  position: relative;
+  right: 0;
+  top: -60px;
+  width: 250px;
+}
+
+/* =========== Bio About ================ */
+.bio-about {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  max-height: 500px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.card-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.notifications-container {
+  width: 320px;
+  height: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.success {
+  padding: 1rem;
+  height: 160px;
+  border-radius: 0.375rem;
+  background-color: rgb(240 253 244);
+}
+
+.succes-svg {
+  color: rgb(74 222 128);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading {
+  font-weight: bold;
+  color: rgb(22 101 52);
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+  color: rgb(21 128 61);
+}
+
+.success-button-container {
+  display: flex;
+  margin-top: 0.875rem;
+  margin-bottom: -0.375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.success-button-main {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #ecfdf5;
+  color: rgb(22 101 52);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+.success-button-main:hover {
+  background-color: #d1fae5;
+}
+
+.success-button-secondary {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.75rem;
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+/* ========== FOOTER ========== */
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #27ac5d;
+  color: #fff;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1121px) {
+  .about .img-about {
+    flex-direction: column;
   }
-  
-  html {
-    scroll-behavior: smooth ;
+
+  .about {
+    height: auto;
+    max-height: none;
   }
-  
-  :root {
-    --green: #299e63;
+
+  .bio-about {
+    max-height: none;
+    height: 700px;
   }
-  
-  li a {
-    text-decoration: none;
-    font: 16px "Red Hat Text", sans-serif;
-    color: rgb(117, 117, 117);
-    font-weight: 400;
+}
+@media only screen and (max-width: 875px) {
+
+  .bio-about {
+    max-height: none;
+    height: 800px;
   }
-  
-  li a:hover {
-    color: var(--green);
-  }
-  
+
   nav {
-    height: 90px;
-    width: 100%;
-    border-bottom: 1px solid black;
-    position: fixed;
-    justify-content: space-between;
-    z-index: 10;
-  }
-  
-  nav ul {
-    display: flex;
+    min-width: 350px;
   }
 
-  .judul {
-    color: var(--green);
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  /* ========= CANVAS =========  */
-
-  #btn-canvas {
+  header nav .list-xl {
     display: none;
-    font-size: 35px;
-    border: none;
-    color: var(--green);
   }
-  
-  .offcanvas-header {
-    display: flex;
-    justify-content: start;
-  }
-  
-  .offcanvas-header button {
-    left: 20px;
-    top: 20px;
-    position: absolute;
-  }
-  
-  .offcanvas {
-    position: relative;
-    left: 180px;
-  }
-
-
-  /* =========== HERO =========== */
 
   .hero {
-    height: 100vh;
-    max-height: 700px;
-    overflow: hidden;
-    background-size: cover;
-    background-image: url(image/canvas.jpg);
-    /* background-color: var(--green); */
-    width: 100%;
+    background-position: 0 50px;
+    /* background-size:50%; */
+    background-repeat: no-repeat;
+    /* background-size:40rem; */
+    /* background-size: 1000px; */
+    height: 500px;
+  }
+
+  .img-about img {
+    width: 300px;
   }
 
   #logo {
     position: absolute;
-    top: 120px;
-    right: 20px;
     margin: auto;
-    width: auto;
-    height: 100px;
-  }
-
-  .about {
-    width: 100%;
-    box-sizing: border-box;
-    max-width: 1400px;
-    height: 100vh;
-    max-height: 800px;
-    margin-bottom: 100px;
-    padding-top: 100px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .img-about {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .img-about img {
-    width: 400px;
-  }
-
-  .about-text p {
-    font: 18px "Red Hat Text", sans-serif;
-    color: rgb(75, 74, 74);
-  }
-
-  .about-text p span {
-    font-size: 50px;
-    font-weight: 700;
-  }
-
-
-   /* =========== Bio About ================ */
-   .bio-about {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color: #8cffba;
-  }
-
-  .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto
-  }
-
-  .card-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .notifications-container {
-    width: 320px;
+    width: 70px;
     height: auto;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
-  
-  .flex {
+
+  #btn-canvas {
     display: flex;
   }
-  
-  .flex-shrink-0 {
-    flex-shrink: 0;
-  }
-  
-  .success {
-    padding: 1rem;
-    border-radius: 0.375rem;
-    background-color: rgb(240 253 244);
-  }
-  
-  .succes-svg {
-    color: rgb(74 222 128);
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  
-  .success-prompt-wrap {
-    margin-left: 0.75rem;
-  }
-  
-  .success-prompt-heading {
-    font-weight: bold;
-    color: rgb(22 101 52);
-  }
-  
-  .success-prompt-prompt {
-    margin-top: 0.5rem;
-    color: rgb(21 128 61);
-  }
-  
-  .success-button-container {
-    display: flex;
-    margin-top: 0.875rem;
-    margin-bottom: -0.375rem;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-  }
-  
-  .success-button-main {
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    background-color: #ECFDF5;
-    color: rgb(22 101 52);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: bold;
-    border-radius: 0.375rem;
-    border: none
-  }
-  
-  .success-button-main:hover {
-    background-color: #D1FAE5;
-  }
-  
-  .success-button-secondary {
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-left: 0.75rem;
-    background-color: #ECFDF5;
-    color: #065F46;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    border-radius: 0.375rem;
-    border: none;
-  }
-  
 
-
-  
-
-
-
-  /* ========== FOOTER ========== */
-
-
-.footer-basic {
-    padding:40px 0;
-    background-color:#27ac5d;
-    color:#fff;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-  }
-  
-  .footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
+  .offcanvas-header h5 {
+    color: var(--green);
   }
 
+  .window {
+    height: auto;
+    max-height: 800px;
+  }
 
-
-
-
-  @media only screen and (max-width: 875px) {
-
-
-
-
-    nav {
-      min-width: 350px;
-    }
-  
-    header nav .list-xl {
-      display: none;
-    }
-  
-    #btn-canvas {
-      display: flex;
-    }
-  
-    .offcanvas-header h5 {
-      color: var(--green);
-    }
+  .window-wrap img {
+    display: none;
+  }
 }
 
-
-
-
-
-@media only screen and (max-width: 447px){
+@media only screen and (max-width: 779px) {
   
-    #logo {
-      position: absolute;
-      top: 30px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 70px;
-      height: 70px;
-    }
+  .hero {
+    height: 400px;
   }
+}
+@media only screen and (max-width: 631px) {
+.hero {
+  height: 300px;
+}
+}
+@media only screen and (max-width: 424px) {
+  .hero {
+    background-position: -30px 50px;
+  }
+}

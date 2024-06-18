@@ -80,6 +80,10 @@ nav ul {
   width: 100%;
 }
 
+.hero .hero-canvas {
+  display: none;
+}
+
 #logo {
   position: absolute;
   top: 120px;
@@ -139,6 +143,7 @@ nav ul {
 .window-wrap {
   display: flex;
   justify-content: space-between;
+  padding: 50px;
 }
 
 .window-wrap p span {
@@ -344,6 +349,24 @@ nav ul {
     max-height: none;
     height: 700px;
   }
+
+  .hero {
+    background-image: none;
+
+  }
+  #logo {
+    z-index: 2;
+  }
+  .hero .hero-canvas {
+    display: flex;
+    width:100%;
+    z-index: 1;
+    object-fit: cover;
+    margin: auto;
+    top: 60px;
+    left: 0px;
+    position: absolute;
+  }
 }
 @media only screen and (max-width: 875px) {
 
@@ -360,15 +383,6 @@ nav ul {
     display: none;
   }
 
-  .hero {
-    background-position: 0 50px;
-    /* background-size:50%; */
-    background-repeat: no-repeat;
-    /* background-size:40rem; */
-    /* background-size: 1000px; */
-    height: 500px;
-  }
-
   .img-about img {
     width: 300px;
   }
@@ -376,7 +390,7 @@ nav ul {
   #logo {
     position: absolute;
     margin: auto;
-    width: 70px;
+    width: 100px;
     height: auto;
   }
 
@@ -391,6 +405,11 @@ nav ul {
   .window {
     height: auto;
     max-height: 800px;
+    padding: 0;
+  }
+
+  .window-wrap {
+    padding: 30px;
   }
 
   .window-wrap img {
@@ -408,9 +427,33 @@ nav ul {
 .hero {
   height: 300px;
 }
+
+#logo {
+  position: absolute;
+  margin: auto;
+  width: 70px;
+  height: auto;
 }
-@media only screen and (max-width: 424px) {
+}
+@media only screen and (max-width: 458px) {
   .hero {
-    background-position: -30px 50px;
+    background-image: none;
+
+  }
+  #logo {
+    z-index: 2;
+    width: 50px;
+    top: 105px;
+    right: 10px;
+  }
+  .hero .hero-canvas {
+    display: flex;
+    width:100%;
+    z-index: 1;
+    object-fit: cover;
+    margin: auto;
+    top: 60px;
+    left: 0px;
+    position: absolute;
   }
 }

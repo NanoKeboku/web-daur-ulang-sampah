@@ -197,3 +197,7 @@ function handleButtonClick(category) {
 }   
 cardGenerator(sampah.kertas);
 
+
+function wa() {
+  window.location.href="https://wa.me/+6282329690097";
+}
